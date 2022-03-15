@@ -1,0 +1,1198 @@
+/*
+Theme Name: Insita Lite
+Theme URI: https://risingthemes.net/shop/insita-lite/
+Author: Risingthemes
+Author URI: https://risingthemes.net
+Description: When it comes to create nice and unique website for interior and architecture business then Insita is the best interior decorator WordPress theme. The Insita WordPress theme has a beautiful layout of homepage sections that can help you to build an extraordinary website to showcase your interior design works. Insita WordPress theme is specially made for Master Bedroom Design, Dining Room, Exterior Design, Kitchen Design, Living Room Design, Cottage, Interior Design services, etc. This theme has easy-to-use options given in a customizer so you can use slider, colors, homepage sections easliy. Insita WordPress theme has tested with the latest version of WordPress. This theme has also tested and compatible with the plugins like contact form 7, wocommerce etc. This theme is fully responsive and well perform with all the screen resolutions.
+Tested up to: 5.8
+Requires PHP: 7.2
+Version: 1.1
+License: GNU General Public License
+License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
+Text Domain: insita-lite
+Tags: portfolio, e-commerce, right-sidebar, custom-background, custom-header, custom-menu, featured-images, theme-options, threaded-comments, custom-logo, blog, full-width-template
+
+Insita Lite is based on Underscores theme(Underscores is distributed under the terms of the GNU GPL v2 or later).
+Insita Lite WordPress Theme has been created by Risingthemes(risingthemes.net), 2021.
+Insita Lite WordPress Theme is released under the terms of GNU GPL
+*/
+html{
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+    font: 400 15px/28px 'Ubuntu';
+    color: #555555;
+	background-color:#fcfafa;
+    box-sizing: border-box;
+}
+*{ 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*:before, *:after { 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; 
+}
+img {
+    margin: 0;
+    padding: 0;
+    border: none;
+    max-width: 100%;
+    height: auto;
+}
+section img {
+    max-width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+	font-family: 'Ubuntu';
+	line-height:normal;
+	color:#333333;;
+	font-weight: 700;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: #0fa5d9;
+    -webkit-transition:all 0.4s ease-in-out;
+    transition:all 0.4s ease-in-out;
+}
+a:hover {
+    text-decoration: none;
+    color: #000000;
+}
+ul {
+    margin: 0 0 0 15px;
+    padding: 0;
+}
+.clear {
+    clear: both;
+}
+.center {
+    text-align: center;
+    margin-bottom: 40px;
+}
+pre {
+    border: 1px solid #d1d1d1;
+    font-size: 1rem;
+    line-height: 1.3125;
+    margin: 0 0 1.75em;
+    max-width: 100%;
+    overflow: auto;
+    overflow-wrap: break-word;
+    padding: 1.75em;
+    white-space: pre-wrap;
+}
+.middle-align {
+    margin: 0 auto;
+    padding: 0;
+}
+.wp-caption {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    max-width: 100%;
+}
+.wp-caption-text {
+    margin: 0;
+    padding: 0;
+}
+.sticky {
+    margin: 0;
+    padding: 0;
+}
+.screen-reader-text,
+.bypostauthor,
+.gallery-caption {
+    margin: 0;
+    padding: 0;
+}
+.alignleft,
+img.alignleft {
+    display: inline;
+    float: left;
+    margin-right: 45px;
+    margin-top: 4px;
+    margin-bottom: 20px;
+    padding: 0;
+}
+.alignright,
+img.alignright {
+    display: inline;
+    float: right;
+}
+.aligncenter,
+img.aligncenter {
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+}
+.comment-list .comment-content ul {
+    list-style: none;
+    margin-left: 15px;
+}
+.comment-list .comment-content ul li {
+    margin: 5px;
+}
+.main-container ol {
+    list-style-position: outside;
+}
+.main-container ol li {
+    margin: 5px 0;
+}
+.toggleMenu {
+    display: none;
+}
+section {
+    padding:0;
+    position: relative;
+}
+.main-container {
+    margin: 50px 0 0;
+    padding: 0;
+}
+h2.section_title{
+    font: 400 38px/1.2 'Ubuntu';
+    color: #333333;
+    position: relative;
+    text-transform: uppercase;
+    margin: 0 auto 50px;
+    display: block;
+}
+h4.subheading{
+    position: relative;
+    text-transform: capitalize;
+    display: inline-block;
+    font-weight: 600;
+    color: #ffffff;
+    line-height: 130%;
+    letter-spacing: 1.5px;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    background-color: #c1a45e;
+    font-size: 20px;
+}
+h4.subheading:after {
+    content: '';
+    position: absolute;
+    display: block;
+    border-bottom: 2px solid #c1a45e;
+    width: 590px;
+    margin-left: -590px;
+    margin-top: -7px;
+    padding-top: 15px;
+}
+
+/********************************
+** Header Css
+********************************/
+.main-header{
+    position:relative; 
+    width:100%; 
+    background-color:#ffffff;
+}
+.site-title{
+    padding: 15px 0;
+}
+.site-title h1{
+    font-family:'Big Shoulders Text';
+    font-size: 46px;
+    font-weight:700;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.site-title h1 a{
+    color: #c1a45e;
+    text-decoration: none;
+}
+
+.site-title p{ 
+    color:#333333; 
+    font-size:14px; 
+    font-family:'Ubuntu'; 
+    font-weight: 400;
+}
+
+.cell{
+    position: relative;
+}
+.cell:not(:last-child){
+    padding-right: 40px;
+    border-right: 1px solid #c1a45e;
+    margin-right: 35px;
+}
+
+.cell-icon{
+    border: 2px solid #c1a45e;
+    color: #333333;
+    width: 38px;
+    height: 38px;
+    text-align: center;
+    border-radius: 30px;
+    line-height: 34px;
+    margin-right: 14px;
+    font-size: 16px;
+}
+.cell-data h3{
+    display: block;
+    font-weight: 600;
+    line-height: 20px;
+    color: #333333;
+    font-size: 20px;
+}
+
+/********************************
+** Aligner Css
+********************************/
+.wrapper{
+    width: 1160px;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+}
+
+.flex{
+    display:-webkit-box;
+    display:-moz-box;
+    display:-ms-flexbox;
+    display:-webkit-flex;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.flex-center{
+    align-items: center;
+}
+
+/********************************
+** Slider Css
+********************************/
+.home-banner {
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+}
+.home-banner:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.5);
+    z-index: 7;
+}
+.home-banner h4 {
+    font: 400 22px 'Ubuntu';
+    line-height: 1;
+    text-transform:uppercase;
+    position:relative; 
+    padding-left:80px; 
+    letter-spacing:5px;
+    color: #c1a45e;
+    margin-bottom: 25px;
+}
+.nivo-caption h4:before { 
+    content:''; 
+    position:absolute; 
+    left:0; 
+    background-color:#ffffff; 
+    width:60px; 
+    height:2px; 
+    top:14px;
+}
+.home-banner h2 {
+    font: 700 70px 'Ubuntu';
+    padding:0;
+    line-height: 1.2;
+    margin-bottom:30px;
+    text-transform:uppercase;
+}
+.home-banner h2 a {
+    color: #ffffff;
+	text-decoration: none;
+}
+.home-banner h2 a:hover {
+    color: #ffffff;
+}
+.home-banner p {
+    color: #ffffff;
+    margin: 0 0 25px 0;
+    font: 400 17px 'Rajdhani';
+    line-height: 25px;
+}
+.home-banner a.slide-button{
+    display:inline-block; 
+    text-align:center; 
+    border:2px solid #c1a45e; 
+    color:#ffffff; 
+    position:relative; 
+    transition: 0.5s ease-in-out; 
+    overflow:hidden; 
+    z-index:1; 
+    padding:10px 35px; 
+    text-transform:uppercase; 
+    font:700 16px 'Ubuntu';
+    border-radius:30px;
+}
+.home-banner a.slide-button:hover{
+    color:#ffffff; 
+    background-color:#c1a45e; 
+    border-color: transparent;
+}
+.home-banner .social-icons {
+    width: auto;
+    position: absolute;
+    left: 50px;
+    bottom: auto;
+    top: calc(50% + 100px);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 9;
+}
+.home-banner .social-icons:before{
+    content: "";
+    width: 1px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    left: 50%;
+    top: -70px;
+}
+.home-banner .social-icons:after{
+    content: attr(data-title);
+    color: #ffffff;
+    position: absolute;
+    font: 700 20px 'Ubuntu';
+    left: -50%;
+    top: -145px;
+    letter-spacing: 5px;
+    -webkit-transform: rotate( -90deg ) translateY(-50%);
+    -ms-transform: rotate( -90deg ) translateY(-50%);
+    transform: rotate( -90deg ) translateY(-50%);
+    text-transform: uppercase;
+}
+.home-banner .social-icons a{
+    color: #ffffff;
+    font-size: 15px;
+    color: #ffffff;
+    line-height: 2.4em;
+    display: table;
+    margin: 0 0 10px 0;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 30px;
+}
+.home-banner .social-icons a:hover{
+    color: #c1a45e;
+}
+
+/********************************
+** Navigation Menu Css
+********************************/
+.toggle{
+    display: block;
+}
+.toggle a{
+    width:auto; 
+    color:#ffffff; 
+    background:url(images/mobile_nav_right.png) no-repeat right center #0e2d45; 
+    padding:10px 25px; 
+    margin-top:5px; 
+    font-size:16px; 
+    text-align:left;
+}
+.toggle a:hover{
+    color:#ffffff !important;
+}
+.theme-navigation{
+    background-color: #333333;
+}
+.navigation{
+    flex: 1 0 auto;
+    padding-right: 50px;
+}
+.sitenav{ 
+    position:relative; 
+    z-index:9999; 
+}
+.sitenav ul {
+    margin:0;
+    padding:0;
+    font-family:'Ubuntu';
+    font-size:12px;
+    font-weight:400;
+    text-transform:uppercase;
+    letter-spacing:2px;
+}
+.sitenav ul li{
+    display:inline-block;
+    position:relative;
+    line-height:normal;
+    margin-left:5px;
+}
+.sitenav ul li:before{
+    top: 0;
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    width: 0px;
+    display: block;
+    height: 1px;
+    background-color: #c1a45e;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-transform-origin: 0;
+    -ms-transform-origin: 0;
+    transform-origin: 0;
+    -webkit-transition: all .8s ease;
+    transition: all .8s ease;
+}
+.sitenav ul li.current_page_item:before,
+.sitenav ul li:hover::before{
+    width: 20px;
+}
+.sitenav ul li a{
+    padding:34px 10px;
+    display:block;
+    text-align:center;
+    position:relative;
+    transition:0.5s all;
+	text-decoration: none;
+}
+.sitenav ul li a, 
+.sitenav ul li.current_page_item ul li a{
+    color:#ffffff;
+}
+
+.sitenav ul li.current_page_item a, 
+.sitenav ul li a:hover, 
+.sitenav ul li.current_page_item ul li a:hover{ 
+    color:#1bbde4;
+}
+
+.sitenav ul li:hover ul li:hover, .sitenav ul li:hover ul li{
+    background-color:inherit !important;
+}
+
+button.dropdown-toggle{
+    display:none;
+}
+.sitenav ul li ul > li:before{
+    content: none;
+}
+
+@media screen and (min-width: 1000px) {
+/* = Navigation 2nd level css
+-------------------------------------------------------------- */
+.sitenav ul li ul {
+    color: #fff;
+    opacity: 0;
+    padding:0;
+    position: absolute;
+    right: 9999rem;
+    top: calc(100% + 2rem);
+    transition: opacity 0.15s linear, transform 0.15s linear, right 0s 0.15s;
+    transform: translateY(0.6rem);
+    width: 20rem;
+    z-index: 1;
+}
+.sitenav ul li.menu-item-has-children:hover > ul,
+.sitenav ul li.menu-item-has-children:focus > ul,
+.sitenav ul li.menu-item-has-children.focus > ul {
+    left: 0;
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.15s linear, transform 0.15s linear;
+    background-color:#2e2e2e;
+    top:100%;
+}
+
+.sitenav ul li ul li{
+    display:block; 
+    position:relative; 
+    float:none; 
+    top:1px; 
+    line-height:18px; 
+    margin-left:0;
+    margin-right:0; 
+}
+.sitenav ul li ul li a{
+    display:block; 
+    padding:10px; 
+    position:relative; 
+    top:0; 
+    text-align:left;
+}
+
+/* = Navigation 3rd level css
+-------------------------------------------------------------- */
+.sitenav ul li:hover ul li:hover > ul,
+.sitenav ul li:hover ul li:focus > ul{
+    display:block; 
+    position:absolute; 
+    left:200px; 
+    top:-1px; 
+    -moz-animation: fadeInRight .3s ease-in-out; 
+    -webkit-animation: fadeInRight .3s ease-in-out; 
+    animation:fadeInRight .3s ease-in-out; 
+}
+.sitenav ul li.menu-item-has-children.focus ul li.menu-item-has-children.focus ul {
+    left:inherit !important; 
+    top:-1px !important;
+    right: -174px !important;
+}
+}
+
+.cta-button{
+    flex: 1 0 auto;
+    margin-left: 12px;
+}
+.cta-button a{
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: #c1a45e;
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+    position: relative;
+    padding: 0 15px;
+}
+.cta-button a:hover{
+    background-color: #333333;
+}
+.cta-button a span{
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: inline-block;
+}
+
+/********************************
+** Services Css
+********************************/
+.services{
+    padding: 70px 0;
+    background-color: #f6f6f6;
+}
+.service-box{
+    position: relative;
+    flex: 1 0 33.3333%;
+    margin-left: -1px;
+    margin-top: -1px;
+    border: 1px solid #e3e3e3;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+.inner{
+    padding: 35px;
+}
+.service-thumb{
+    width: 45px;
+    float: left;
+    margin-right: 30px;
+    margin-top: 6px;
+}
+.service-content{
+    overflow: hidden;
+}
+.service-content span{
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #c1a45e;
+    letter-spacing: 1px;
+    margin: 0 0 9px;
+    padding: 0;
+    font-weight: 700;
+}
+.service-content h3{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 0 18px;
+    padding: 0 0 23px;
+    position: relative;
+}
+.service-content h3 a{
+    color: #333333;
+}
+.service-content h3:after{
+    background-color: #c1a45e;
+    bottom: 0px;
+    content: '';
+    display: block;
+    height: 1px;
+    left: 0;
+    position: absolute;
+    width: 30px;
+}
+
+/********************************
+** Welcome Css
+********************************/
+.welcome-section{
+    padding: 70px 0;
+    position: relative;
+}
+.welcome-section .col{
+    flex: 0 0 50%;
+}
+.welcome-content h2{
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.welcome-content p{
+    margin-bottom: 25px;
+}
+.welcome-thumb{
+    margin-left: 16%;
+}
+.welcome-content a.welcome-more{
+    position: relative;
+    z-index: 0;
+    display: inline-block;
+    cursor: pointer;
+    background-color: #333333;
+    padding: 15px 35px;
+}
+.welcome-content a.welcome-more:before,
+.welcome-content a.welcome-more:after {
+    position: absolute;
+    width: 0;
+    height: 50%;
+    content: '';
+    -webkit-transition: .3s cubic-bezier(.785, .135, .15, .86);
+    transition: .3s cubic-bezier(.785, .135, .15, .86);
+    background-color: #c1a45e;
+}
+.welcome-content a.welcome-more:before{
+    top: 0;
+    right: auto;
+    left: 0;
+}
+.welcome-content a.welcome-more:after{
+    right: 0;
+    bottom: 0;
+    left: auto;
+}
+.welcome-content a.welcome-more span{
+    font: 700 16px 'Ubuntu';
+    position: relative;
+    z-index: 1;
+    display: block;
+    padding-right: 25px;
+    padding-left: 0;
+    transition: color .3s ease;
+    transform: scaleX(.9);
+    transform-origin: center left;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.welcome-content a.welcome-more i{
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    right: 18px;
+    width: 22%;
+    height: 2px;
+    transition: all .3s ease;
+    transform: scaleX(.25);
+    transform-origin: center right;
+    background-color: #ffffff;
+}
+.welcome-content a.welcome-more:hover span{
+    color: #333333;
+}
+.welcome-content a.welcome-more:hover::before{
+    right: 0;
+    left: auto;
+    width: 100%;
+}
+.welcome-content a.welcome-more:hover::after{
+    right: auto;
+    left: 0;
+    width: 100%;
+}
+.welcome-content a.welcome-more:hover i{
+    transform: scaleX(1);
+    background-color: #333333;
+}
+
+/********************************
+** Footer Css
+********************************/
+.copyright-wrapper{ 
+    margin:0; 
+    text-align:center; 
+    padding:15px 0; 
+    color:#ffffff; 
+    background-color:#111709;
+}
+.copyright-wrapper a{ 
+    color:#ffffff;
+	text-decoration: none;
+}
+
+/********************************
+** InnerPage Css
+********************************/
+.entry-title{
+    font-weight: normal;
+}
+.entry-title a{
+    color: #252525;
+	text-decoration: none;
+}
+.content-area {
+    width: 1160px;
+    margin: 0 auto;
+    padding:0;
+}
+.site-main {
+    width: 800px;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+#sitefull {
+    width: auto !important;
+}
+#nosidebar {
+    width: 80%;
+    margin: 0 auto;
+    float: none;
+    text-align: center;
+}
+#sidebar {
+    width: 270px;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+/********************************
+** Contact Form 7 Css
+********************************/
+.wpcf7 {
+    margin: 0;
+    padding: 0;
+    font: 400 15px 'Open Sans';
+    color: #2e2e2e;
+}
+.wpcf7 form {
+    margin: 0;
+    padding: 0;
+}
+.wpcf7 form span.last {
+    float: none !important;
+}
+.wpcf7 form input[type="text"],
+.wpcf7 form input[type="email"],
+.wpcf7 form input[type="tel"],
+.wpcf7 form input[type="url"],
+.wpcf7 form input[type="date"],
+.wpcf7 form select,
+.leftdiv input[type="text"],
+.leftdiv input [type="url"],
+.leftdiv input[type="email"],
+.leftdiv input[type="tel"],
+.wpcf7 form textarea,
+.rightdiv textarea {
+    width: 94%;
+    background-color: #f8f8f8;
+    border: 1px solid #e6e5e5;
+    padding: 10px;
+    margin-top: 15px;
+    font: 400 14px 'Open Sans';
+    color: #777777;
+}
+.wpcf7 form textarea,
+.rightdiv textarea {
+    height: 128px;
+}
+.wpcf7 form input[type="checkbox"],
+.wpcf7 form input[type="radio"],
+.wpcf7 form input[type="file"] {
+    margin-top: 10px;
+    padding: 0;
+}
+span.wpcf7-list-item {
+    margin: 0 15px 0 0 !important;
+}
+.wpcf7 form input[type="submit"],
+#contact input[type="submit"] {
+    font: 400 15px 'Open Sans';
+    margin: 25px 0 0 0;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    cursor: pointer;
+    background-color: #000000;
+    color:#ffffff;
+}
+.error_msg {
+    padding: 10px;
+    background: #ffd3ce;
+    color: #e00;
+    border: 1px #e00 solid;
+    margin: 15px 0;
+}
+.success_msg {
+    padding: 10px;
+    background: #dcffc5;
+    color: #070;
+    border: 1px #070 solid;
+    margin: 15px 0;
+}
+.spacer20 {
+    height: 20px;
+    clear: both;
+}
+
+/********************************
+** Navigation links Css
+********************************/
+.nav-links {
+    display: table;
+    clear: both;
+    margin: 15px 0;
+    width: 100%;
+}
+.nav-previous {
+    float: left;
+}
+.nav-next {
+    float: right;
+}
+.nav-links a,
+.nav-links .page-numbers {
+    background: #2e2e2e;
+    color: #fff;
+    padding: 5px 10px;
+    display: inline-block;
+	text-decoration: none;
+}
+.nav-links .current,
+.nav-links a:hover {
+    background: #feb62a;
+    color:#ffffff !important;
+}
+
+/********************************
+** Inner Page Title Css
+********************************/
+h1.entry-title,
+h1.page-title {
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+h1.entry-title a,
+h1.page-title a{
+    color:#000000;
+	text-decoration: none;
+}
+article.tag-sticky-2 {
+    background: #f6f6f6;
+    padding: 10px;
+}
+article img {
+    height: auto;
+}
+article p {
+    margin: 10px 0;
+}
+.post-date {
+    display: inline;
+}
+.post-comment {
+    display: inline;
+}
+.post-categories {
+    display: inline;
+}
+.post-tags {
+    display: inline;
+}
+.post-thumb, .postmeta{
+    margin-top:10px;
+}
+.postmeta a{
+	text-decoration: none;
+}
+form.search-form {
+    margin-bottom: 15px;
+}
+input.search-field,
+.post-password-form input[type=password] {
+    border: 1px #ccc solid;
+    padding: 10px 12px;
+    display: inline-block;
+}
+input.search-submit,
+.post-password-form input[type=submit] {
+    border: none;
+    color: #ffffff;
+    padding: 4px 10px;
+    cursor: pointer;
+}
+aside.widget {
+    margin-bottom: 30px;
+}
+aside.widget ul {
+    list-style: disc;
+    margin-left:0;
+}
+.accordion-box h2.active {
+    color: #ff8a00;
+}
+.webicon {
+    font-size: 20px;
+}
+#sidebar ul li {
+    margin: 5px 0;
+    list-style:none;
+    background:url(images/nav_right.png) no-repeat left center;
+    padding:0 0 0 25px;
+}
+#sidebar ul li a{
+	text-decoration: none;
+}
+.comment-list,
+ol.comment-list {
+    list-style: none;
+    margin-left: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left:0;
+}
+.comment-list ul,
+ol.comment-list ul {
+    list-style: none;
+}
+.comment-list li.comment {
+    margin-top: 20px;
+}
+.comment-list .comment-content h1,
+.comment-list .comment-content h2,
+.comment-list .comment-content h3,
+.comment-list .comment-content h4,
+.comment-list .comment-content h5,
+.comment-list .comment-content h6 {
+    margin-top: 15px;
+}
+ol.comment-list li ol{
+    list-style:none;
+}
+h3.widget-title {
+    font-size: 19px;
+    border-bottom: 1px solid #cccccc;
+    padding:5px 15px;
+    margin-bottom: 15px;
+    background-color:#feb62a;
+    color:#ffffff;
+    font-weight: normal;
+}
+.blog-post-repeat {
+    border-bottom: 1px solid #cccccc;
+    margin-bottom: 40px;
+}
+a.blogthumbs img {
+    width: 100%;
+}
+#wp-calendar td {
+    padding: 9px;
+}
+.textwidget select {
+    border: 1px solid #ccc;
+    height: 30px;
+    width: 100%;
+}
+
+/*------- COMMENT STYLES --------*/
+
+.comment-author.vcard {
+    display: inline-block;
+    margin-right: 15px;
+}
+.comment-author img {
+    display: block;
+}
+.comment-meta {
+    margin: 5px 0;
+}
+.comment-list ol.children li.comment {
+    background-image: none;
+    padding-left: 5px;
+}
+.hrule {
+    border-top: 1px #dbdbdb solid;
+    margin-top: 15px;
+    padding-bottom: 15px;
+}
+ol.commentlist {
+    list-style: none;
+}
+#commentform p {
+    margin: 5px 0;
+}
+#commentform label {
+    display: block;
+}
+#commentform input#email,
+#commentform input#url,
+#commentform input#author,
+#commentform textarea,
+#commentform input#eazycfc_captcha {
+    max-width: 96%;
+    border: 1px #ccc solid;
+    padding: 5px 2%;
+}
+#commentform input#submit {
+    font: 400 15px 'Open Sans';
+    border: none;
+    padding: 5px 10px;
+    color: #fff;
+    display: inline-block;
+}
+#commentform input#submit:hover {
+    cursor: pointer;
+}
+.form-allowed-tags {
+    display: none;
+}
+ul.errormsg {
+    background: #ffe4e4;
+}
+ul.errormsg li {
+    padding: 5px;
+}
+.entry-content table,
+.comment-body table {
+    border-collapse: collapse;
+    margin: 10px 0;
+}
+.entry-content table td,
+.entry-content table th,
+.comment-body table td,
+.comment-body table th {
+    padding: 10px 5px;
+    text-align: left;
+}
+.entry-content table th,
+.comment-body table th {
+    color: #676767;
+    font: normal 18px 'Work Sans';
+    border-bottom: 1px #888 solid;
+}
+.entry-content table td,
+.comment-body table td {
+    border-bottom: 1px #ccc solid;
+}
+.fvch-codeblock:hover .comment-form-url {
+    display: block !important;
+}
+select{
+    padding:10px;
+    width:100%;
+}
+footer.entry-meta {
+    clear: left;
+}
+p.form-submit input[type="submit"]{
+    color:#ffffff !important;
+}
+input[type="submit"].search-submit{
+    background-color:#000000;
+    color:#ffffff;
+    padding:10px 13px;
+}
+
+/* Accessibility */
+/* Text meant only for screen readers. */
+
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+  /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  clip-path: none;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar. */
+}
+
+/* Do not show the outline on the skip link target. */
+
+#sitemain[tabindex="-1"]:focus {
+  outline: 0;
+}
+.error-404{
+    text-align: center;
+    margin: 0;
+}
+.error-404 h1{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+p.text-404{
+    font-size: 18px;
+    line-height: 34px;
+    margin-bottom: 30px;
+}
